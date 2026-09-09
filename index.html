@@ -3,100 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Front Page</title>
+    <title>EduStream - Learning Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
 
         body {
-            /* A soft background color to make the white tiles pop out */
-            background-color: #f0f4f8;
-
-            /* Center everything on the screen */
+            /* Modern deep gradient background */
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
             padding: 4rem 2rem;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Animated background blobs for modern vibe */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: float 10s infinite alternate ease-in-out;
+        }
+        .blob1 { width: 400px; height: 400px; background: #e74c3c; top: -100px; left: -100px; }
+        .blob2 { width: 350px; height: 350px; background: #3498db; bottom: -50px; right: -50px; animation-delay: -5s; }
+        .blob3 { width: 300px; height: 300px; background: #9b59b6; top: 40%; left: 50%; transform: translate(-50%, -50%); animation-delay: -2s; }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 50px) scale(1.1); }
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            width: 100%;
         }
 
         h1 {
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #2c3e50;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #fff, #b1d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
-        .tile-list {
-            /* "List form in the center" - strict single column or narrow responsive grid */
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #b0c4de;
+            font-weight: 300;
+            padding: 0 10px;
+        }
+
+        .tile-container {
             width: 100%;
-            max-width: 500px;
-            display: flex;
-            flex-direction: column;
-            gap: 1.25rem;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            z-index: 1;
         }
 
         .tile {
-            /* Tile styling */
-            background-color: #ffffff;
-            padding: 1.5rem 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            /* Glassmorphism styling */
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 2rem 1.5rem;
+            border-radius: 20px;
             text-align: center;
-            font-size: 1.5rem;
-            font-weight: 600;
-            color: #34495e;
             text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border-left: 8px solid #3498db;
+            color: #ffffff;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .tile::before {
+            content: ""; position: absolute; top: 0; left: -100%; width: 50%; height: 100%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0) 100%);
+            transform: skewX(-25deg); transition: all 0.6s ease;
+        }
+
+        .tile:hover::before { left: 200%; }
+
+        .tile:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .tile-icon {
+            width: 70px;
+            height: 70px;
+            margin-bottom: 1.2rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: inset 0 0 10px rgba(255,255,255,0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .tile:hover .tile-icon { transform: scale(1.1) rotate(5deg); }
+
+        .tile-title {
+            font-size: 1.6rem;
+            font-weight: 600;
             letter-spacing: 1px;
-            user-select: none;
+            margin-bottom: 0.5rem;
         }
 
-        /* Hover effect to make it feel interactive */
-        .tile:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-            background-color: #f8faff;
+        .tile-desc {
+            font-size: 0.9rem;
+            color: #a9bccc;
+            font-weight: 300;
         }
 
-        /* Individual subject colors for a nice visual touch */
-        .tile.maths { border-left-color: #e74c3c; }        /* Red */
-        .tile.science { border-left-color: #2ecc71; }      /* Green */
-        .tile.english { border-left-color: #f1c40f; }      /* Yellow */
-        .tile.hindi { border-left-color: #9b59b6; }        /* Purple */
-        .tile.it { border-left-color: #3498db; }           /* Blue */
-        .tile.social-studies { border-left-color: #e67e22; } /* Orange */
+        /* Subject Specific Glows */
+        .maths:hover { box-shadow: 0 20px 40px rgba(231, 76, 60, 0.3); }
+        .maths .tile-icon svg { fill: #e74c3c; }
+        .science:hover { box-shadow: 0 20px 40px rgba(46, 204, 113, 0.3); }
+        .science .tile-icon svg { fill: #2ecc71; }
+        .english:hover { box-shadow: 0 20px 40px rgba(241, 196, 15, 0.3); }
+        .english .tile-icon svg { fill: #f1c40f; }
+        .hindi:hover { box-shadow: 0 20px 40px rgba(155, 89, 182, 0.3); }
+        .hindi .tile-icon svg { fill: #9b59b6; }
+        .it:hover { box-shadow: 0 20px 40px rgba(52, 152, 219, 0.3); }
+        .it .tile-icon svg { fill: #3498db; }
+        .social:hover { box-shadow: 0 20px 40px rgba(230, 126, 34, 0.3); }
+        .social .tile-icon svg { fill: #e67e22; }
 
-        /* Responsive styling for smaller mobile screens */
-        @media (max-width: 600px) {
-            .tile {
-                font-size: 1.2rem;
-                padding: 1.2rem;
+        /* --- MOBILE & TABLET RESPONSIVENESS --- */
+        @media (max-width: 992px) {
+            .tile-container { grid-template-columns: repeat(2, 1fr); }
+            h1 { font-size: 3rem; }
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 3rem 1.5rem; }
+            h1 { font-size: 2.5rem; margin-bottom: 0.2rem; }
+            header { margin-bottom: 2.5rem; }
+            .tile-container { gap: 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            body { padding: 2rem 1rem; }
+            h1 { font-size: 2rem; }
+            p.subtitle { font-size: 1rem; }
+            header { margin-bottom: 2rem; }
+            .tile-container {
+                grid-template-columns: 1fr; /* Single column on phones */
+                gap: 1.25rem;
             }
+            .tile {
+                padding: 1.5rem 1rem;
+                border-radius: 16px;
+                flex-direction: row; /* Horizontal layout for phone cards */
+                text-align: left;
+                justify-content: flex-start;
+                gap: 1rem;
+            }
+            .tile-icon {
+                width: 55px; height: 55px;
+                margin-bottom: 0;
+                flex-shrink: 0;
+            }
+            .tile-icon svg { width: 26px; height: 26px; }
+            .tile-title { font-size: 1.3rem; margin-bottom: 0.2rem; }
+            .tile-desc { font-size: 0.85rem; }
         }
     </style>
 </head>
 <body>
 
-    <h1>Select a Subject</h1>
+    <!-- Animated Background Blobs -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
 
-    <div class="tile-list">
-        <a href="subjects/maths.html" class="tile maths">MATHS</a>
-        <!-- Now links to the new science.html page -->
-        <a href="subjects/science.html" class="tile science">SCIENCE</a>
-        <a href="subjects/english.html" class="tile english">ENGLISH</a>
-        <a href="subjects/hindi.html" class="tile hindi">HINDI</a>
-        <a href="subjects/it.html" class="tile it">IT</a>
-        <a href="subjects/social-studies.html" class="tile social-studies">SOCIAL STUDIES</a>
+    <header>
+        <h1>EduStream</h1>
+        <p class="subtitle">Class 10 Learning Hub & Revision Notes</p>
+    </header>
+
+    <div class="tile-container">
+        <!-- MATHS -->
+        <a href="subjects/maths.html" class="tile maths">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6.5 13.5h-5v-1h5v1zm0-3h-5v-1h5v1zm1.5-3.5h-8v-1h8v1zm-2.5-3.5h-3v-1h3v1z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">Maths</div>
+                <div class="tile-desc">Formulas, concepts & PYQs</div>
+            </div>
+        </a>
+
+        <!-- SCIENCE -->
+        <a href="subjects/science.html" class="tile science">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M20.8 19.8l-5.8-7.7V5h1V3H8v2h1v7.1l-5.8 7.7c-.5.6-.1 1.4.7 1.4h16.2c.8 0 1.2-.8.7-1.4zM10 5h4v6.6l1.5 2V14H8.5v-.4l1.5-2V5z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">Science</div>
+                <div class="tile-desc">Physics, Chemistry, Bio</div>
+            </div>
+        </a>
+
+        <!-- ENGLISH -->
+        <a href="subjects/english.html" class="tile english">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">English</div>
+                <div class="tile-desc">Literature, themes & arcs</div>
+            </div>
+        </a>
+
+        <!-- HINDI -->
+        <a href="subjects/hindi.html" class="tile hindi">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">Hindi</div>
+                <div class="tile-desc">Kshitij & Kritika notes</div>
+            </div>
+        </a>
+
+        <!-- IT -->
+        <a href="subjects/it.html" class="tile it">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">IT (402)</div>
+                <div class="tile-desc">Code & theory revision</div>
+            </div>
+        </a>
+
+        <!-- SOCIAL STUDIES -->
+        <a href="subjects/social-studies.html" class="tile social">
+            <div class="tile-icon">
+                <svg width="35" height="35" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </div>
+            <div>
+                <div class="tile-title">Social Studies</div>
+                <div class="tile-desc">History, Civics, Geo, Eco</div>
+            </div>
+        </a>
     </div>
 
 </body>
