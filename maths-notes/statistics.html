@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Statistics | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Statistics</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 13</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>Mean (&xbar;):</b><br>
+    Direct Method: &xbar; = &Sigma;f&#8321;x&#8321; / &Sigma;f&#8321;<br>
+    Assumed Mean Method: &xbar; = a + (&Sigma;f&#8321;d&#8321; / &Sigma;f&#8321;), where d&#8321; = x&#8321; - a<br><br>
+
+    <b>Mode:</b><br>
+    Mode = l + [ (f&#8321; - f&#8320;) / (2f&#8321; - f&#8320; - f&#8322;) ] &times; h<br><br>
+
+    <b>Median:</b><br>
+    Median = l + [ (n/2 - cf) / f ] &times; h<br><br>
+
+    <b>Empirical Relationship:</b><br>
+    <span class="hl">3 Median = Mode + 2 Mean</span>
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><span class="hl">Class Mark (x&#8321;):</span> (Upper Class Limit + Lower Class Limit) / 2</li>
+    <li><b>Modal Class:</b> The class interval having the maximum frequency. (Used to find 'l' for Mode formula).</li>
+    <li><b>Median Class:</b> Find the cumulative frequency (cf). The class whose cumulative frequency is strictly greater than and nearest to n/2 is the median class.</li>
+    <li>To find the Median, the class intervals must be continuous. If not, convert them by subtracting 0.5 from lower limits and adding 0.5 to upper limits.</li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> If the mean of a frequency distribution is 8.1 and &Sigma;f&#8321; = 20, find &Sigma;f&#8321;x&#8321;. <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Mean = &Sigma;f&#8321;x&#8321; / &Sigma;f&#8321; &rArr; 8.1 = &Sigma;f&#8321;x&#8321; / 20 &rArr; &Sigma;f&#8321;x&#8321; = 8.1 &times; 20 = 162.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> The mean and median of a unimodal grouped data are 24 and 26 respectively. Find its mode. <span class="tag">CBSE 2019</span> <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Using the empirical formula: Mode = 3 Median - 2 Mean<br>
+      Mode = 3(26) - 2(24) = 78 - 48 = 30.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Find the modal class and the median class of the following data:<br>
+    Class: 0-10, 10-20, 20-30, 30-40, 40-50<br>
+    Frequency: 5, 8, 20, 15, 7 <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Max frequency is 20, so Modal class = 20-30.<br>
+      Cumulative Frequencies (cf): 5, 13, 33, 48, 55.<br>
+      Total n = 55. n/2 = 27.5.<br>
+      The cf just greater than 27.5 is 33, which corresponds to the class 20-30.<br>
+      So, Median class = 20-30.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> If the median of the distribution is 28.5, find the values of x and y.<br>
+    Class: 0-10 (5), 10-20 (x), 20-30 (20), 30-40 (15), 40-50 (y), 50-60 (5). Total = 60. <span class="tag">IMPORTANT</span> <span class="tag">CBSE 2018</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Cumulative frequencies: 5, 5+x, 25+x, 40+x, 40+x+y, 45+x+y.<br>
+      Given Total n = 60 &rArr; 45 + x + y = 60 &rArr; x + y = 15 ... (i)<br>
+      Median is 28.5, which lies in the class 20-30. So median class is 20-30.<br>
+      l = 20, h = 10, f = 20, cf of preceding class = 5+x, n/2 = 30.<br>
+      Median = l + [ (n/2 - cf) / f ] &times; h<br>
+      28.5 = 20 + [ (30 - (5+x)) / 20 ] &times; 10<br>
+      8.5 = (25 - x) / 2<br>
+      17 = 25 - x &rArr; x = 25 - 17 = 8.<br>
+      From (i), y = 15 - 8 = 7.<br>
+      So, x = 8, y = 7.
+    </div>
+  </div>
+
+  <div class="footer">Numbers tell a story, if you know how to read them!</div>
+</div>
+</body>
+</html>

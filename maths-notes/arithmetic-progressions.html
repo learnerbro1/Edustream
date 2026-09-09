@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Arithmetic Progressions | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Arithmetic Progressions</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 5</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>General form of an A.P.:</b> a, a+d, a+2d, a+3d, ...<br><br>
+    <b>nth term of an A.P. (a<sub>n</sub>):</b><br>
+    <span class="hl" style="font-size: 18px; font-weight: bold;">a<sub>n</sub> = a + (n - 1)d</span><br><br>
+    <b>Sum of first n terms (S<sub>n</sub>):</b><br>
+    <span class="hl2" style="font-size: 18px; font-weight: bold;">S<sub>n</sub> = n/2 [ 2a + (n - 1)d ]</span><br>
+    <span class="hl" style="font-size: 18px; font-weight: bold;">S<sub>n</sub> = n/2 [ a + l ]</span> (where l is the last term)
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><span class="hl">Common Difference (d):</span> Difference between consecutive terms. d = a<sub>2</sub> - a<sub>1</sub> = a<sub>3</sub> - a<sub>2</sub>. It can be positive, negative, or zero.</li>
+    <li>If <i>a, b, c</i> are in A.P., then 2b = a + c (i.e., b is the arithmetic mean of a and c).</li>
+    <li><b>Selection of terms in A.P.:</b>
+      <ul>
+        <li>3 terms: a-d, a, a+d</li>
+        <li>4 terms: a-3d, a-d, a+d, a+3d</li>
+        <li>5 terms: a-2d, a-d, a, a+d, a+2d</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> Find the 10th term of the A.P. 2, 7, 12, ... <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Here a = 2, d = 7 - 2 = 5.<br>
+      a<sub>10</sub> = a + 9d = 2 + 9(5) = 2 + 45 = 47.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> Which term of the A.P. 3, 8, 13, 18, ... is 78? <span class="tag">CBSE 2019</span> <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Here a = 3, d = 5. Let a<sub>n</sub> = 78.<br>
+      a + (n - 1)d = 78 &rArr; 3 + (n - 1)5 = 78<br>
+      &rArr; (n - 1)5 = 75 &rArr; n - 1 = 15 &rArr; n = 16.<br>
+      It is the 16th term.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Find the sum of the first 22 terms of the A.P. 8, 3, -2, ... <span class="tag">IMPORTANT</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Here a = 8, d = 3 - 8 = -5, n = 22.<br>
+      S<sub>n</sub> = n/2 [2a + (n - 1)d]<br>
+      S<sub>22</sub> = 22/2 [ 2(8) + (22 - 1)(-5) ] = 11 [ 16 + 21(-5) ]<br>
+      = 11 [ 16 - 105 ] = 11 &times; (-89) = -979.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> The sum of the 4th and 8th terms of an A.P. is 24, and the sum of the 6th and 10th terms is 44. Find the first three terms of the A.P. <span class="tag">HOTS</span> <span class="tag">CBSE 2018</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Given: a<sub>4</sub> + a<sub>8</sub> = 24 &rArr; (a + 3d) + (a + 7d) = 24 &rArr; 2a + 10d = 24 &rArr; a + 5d = 12 ... (i)<br>
+      Also given: a<sub>6</sub> + a<sub>10</sub> = 44 &rArr; (a + 5d) + (a + 9d) = 44 &rArr; 2a + 14d = 44 &rArr; a + 7d = 22 ... (ii)<br>
+      Subtracting (i) from (ii): (a + 7d) - (a + 5d) = 22 - 12 &rArr; 2d = 10 &rArr; d = 5.<br>
+      Substitute d in (i): a + 5(5) = 12 &rArr; a + 25 = 12 &rArr; a = -13.<br>
+      The first three terms are a, a+d, a+2d: -13, -8, -3.
+    </div>
+  </div>
+
+  <div class="footer">Step by step progress leads to success!</div>
+</div>
+</body>
+</html>

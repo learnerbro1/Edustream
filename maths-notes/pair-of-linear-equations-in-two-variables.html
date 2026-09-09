@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pair of Linear Equations | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Linear Equations</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 3</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas & Conditions</h2>
+  <div class="box">
+    <b>General Form:</b> a&#8321;x + b&#8321;y + c&#8321; = 0 and a&#8322;x + b&#8322;y + c&#8322; = 0.<br><br>
+    <b>Conditions for Consistency / Nature of Lines:</b>
+    <ul>
+      <li><span class="hl">Intersecting Lines:</span> a&#8321;/a&#8322; &ne; b&#8321;/b&#8322; (Exactly one solution / Unique solution) &rarr; Consistent.</li>
+      <li><span class="hl">Coincident Lines:</span> a&#8321;/a&#8322; = b&#8321;/b&#8322; = c&#8321;/c&#8322; (Infinitely many solutions) &rarr; Dependent / Consistent.</li>
+      <li><span class="hl2">Parallel Lines:</span> a&#8321;/a&#8322; = b&#8321;/b&#8322; &ne; c&#8321;/c&#8322; (No solution) &rarr; Inconsistent.</li>
+    </ul>
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><b>Graphical Method:</b> Plot both equations on a graph. The point of intersection gives the solution. If they don't intersect, there is no solution.</li>
+    <li><b>Algebraic Methods of Solving:</b>
+      <ul>
+        <li><span class="hl">Substitution Method:</span> Express one variable in terms of the other from one equation and substitute it in the second equation.</li>
+        <li><span class="hl">Elimination Method:</span> Multiply equations by suitable constants to make the coefficients of one variable equal, then add/subtract to eliminate it.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> For what value of k, do the equations 3x - y + 8 = 0 and 6x - ky = -16 represent coincident lines? <span class="tag">CBSE 2019</span> <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> For coincident lines, a&#8321;/a&#8322; = b&#8321;/b&#8322; = c&#8321;/c&#8322;.<br>
+      The second equation is 6x - ky + 16 = 0.<br>
+      3/6 = -1/-k = 8/16 &rArr; 1/2 = 1/k &rArr; k = 2.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> Solve the following pair of linear equations by substitution method: x + y = 14; x - y = 4. <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> From the second eq, x = y + 4.<br>
+      Substitute in first eq: (y + 4) + y = 14 &rArr; 2y = 10 &rArr; y = 5.<br>
+      Then x = 5 + 4 = 9.<br>
+      Answer: x = 9, y = 5.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Five years ago, Nuri was thrice as old as Sonu. Ten years later, Nuri will be twice as old as Sonu. How old are Nuri and Sonu? <span class="tag">IMPORTANT</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let Nuri's present age be x and Sonu's be y.<br>
+      5 yrs ago: (x - 5) = 3(y - 5) &rArr; x - 3y = -10 ... (i)<br>
+      10 yrs later: (x + 10) = 2(y + 10) &rArr; x - 2y = 10 ... (ii)<br>
+      Subtract (i) from (ii): (-2y) - (-3y) = 10 - (-10) &rArr; y = 20.<br>
+      Substitute y = 20 in (ii): x - 40 = 10 &rArr; x = 50.<br>
+      Nuri is 50 years old and Sonu is 20 years old.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> The sum of a two-digit number and the number obtained by reversing the digits is 66. If the digits of the number differ by 2, find the number. How many such numbers are there? <span class="tag">HOTS</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the ten's digit be x and unit's digit be y. Number = 10x + y.<br>
+      Reversed number = 10y + x.<br>
+      Given: (10x + y) + (10y + x) = 66 &rArr; 11(x + y) = 66 &rArr; x + y = 6 ... (i)<br>
+      Also given digits differ by 2, so either x - y = 2 or y - x = 2.<br>
+      <b>Case 1:</b> x - y = 2 ... (ii). Add (i) and (ii): 2x = 8 &rArr; x = 4. Then y = 2. Number = 42.<br>
+      <b>Case 2:</b> y - x = 2 ... (iii). Add (i) and (iii): 2y = 8 &rArr; y = 4. Then x = 2. Number = 24.<br>
+      There are two such numbers: 42 and 24.
+    </div>
+  </div>
+
+  <div class="footer">Solve it step by step!</div>
+</div>
+</body>
+</html>

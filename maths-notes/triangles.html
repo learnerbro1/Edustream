@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Triangles | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Triangles</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 6</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas & Theorems</h2>
+  <div class="box">
+    <b>Basic Proportionality Theorem (BPT / Thales Theorem):</b><br>
+    If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio.<br><br>
+    <b>Converse of BPT:</b><br>
+    If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side.
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><span class="hl">Similar Figures:</span> Two figures having the same shape but not necessarily the same size. Two polygons of the same number of sides are similar if their corresponding angles are equal and their corresponding sides are in the same ratio.</li>
+    <li><b>Criteria for Similarity of Triangles:</b>
+      <ul>
+        <li><span class="hl2">AAA / AA Similarity:</span> If in two triangles, corresponding angles are equal, then their corresponding sides are in the same ratio and hence the two triangles are similar.</li>
+        <li><span class="hl2">SSS Similarity:</span> If in two triangles, sides of one triangle are proportional to the sides of the other triangle, then their corresponding angles are equal and hence the two triangles are similar.</li>
+        <li><span class="hl2">SAS Similarity:</span> If one angle of a triangle is equal to one angle of the other triangle and the sides including these angles are proportional, then the two triangles are similar.</li>
+      </ul>
+    </li>
+  </ul>
+  <p class="note"><b>Note:</b> The ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides. (This theorem is often omitted or reduced in recent syllabus, but good to know).</p>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> In &Delta;ABC, D and E are points on sides AB and AC respectively such that DE || BC. If AD/DB = 3/4 and AC = 15 cm, find AE. <span class="tag">CBSE 2019</span> <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> By BPT, AD/DB = AE/EC.<br>
+      Given AD/DB = 3/4, so AE/EC = 3/4. Let AE = 3x and EC = 4x.<br>
+      AC = AE + EC = 7x = 15 &rArr; x = 15/7.<br>
+      AE = 3x = 3(15/7) = 45/7 cm.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same time a tower casts a shadow 28 m long. Find the height of the tower. <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the height of the tower be h.<br>
+      The triangles formed by the pole and its shadow, and the tower and its shadow are similar (AA similarity, since sun's elevation angle is the same).<br>
+      Therefore, Ratio of heights = Ratio of shadows &rArr; 6 / h = 4 / 28<br>
+      &rArr; h = (6 &times; 28) / 4 = 6 &times; 7 = 42 m.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Diagonals AC and BD of a trapezium ABCD with AB || DC intersect each other at point O. Using a similarity criterion for two triangles, show that OA/OC = OB/OD. <span class="tag">IMPORTANT</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> In &Delta;AOB and &Delta;COD:<br>
+      &ang;AOB = &ang;COD (Vertically opposite angles)<br>
+      &ang;OAB = &ang;OCD (Alternate interior angles, since AB || DC)<br>
+      &ang;OBA = &ang;ODC (Alternate interior angles)<br>
+      Therefore, &Delta;AOB &sim; &Delta;COD (By AAA similarity criterion).<br>
+      Hence, corresponding sides are proportional: OA/OC = OB/OD.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> State and prove the Basic Proportionality Theorem (Thales Theorem). <span class="tag">IMPORTANT</span> <span class="tag">CBSE 2020</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Statement:</b> If a line is drawn parallel to one side of a triangle intersecting the other two sides, then it divides the two sides in the same ratio.<br>
+      <b>Proof:</b> Let &Delta;ABC be given and a line DE || BC intersects AB at D and AC at E.<br>
+      To prove: AD/DB = AE/EC.<br>
+      <b>Construction:</b> Join BE and CD and draw EM &perp; AB and DN &perp; AC.<br>
+      Area(&Delta;ADE) = (1/2) &times; AD &times; EM.<br>
+      Area(&Delta;BDE) = (1/2) &times; DB &times; EM.<br>
+      Ratio = Area(&Delta;ADE) / Area(&Delta;BDE) = AD / DB ... (i)<br>
+      Similarly, Area(&Delta;ADE) = (1/2) &times; AE &times; DN and Area(&Delta;CDE) = (1/2) &times; EC &times; DN.<br>
+      Ratio = Area(&Delta;ADE) / Area(&Delta;CDE) = AE / EC ... (ii)<br>
+      Now, &Delta;BDE and &Delta;CDE are on the same base DE and between the same parallels DE and BC. So, Area(&Delta;BDE) = Area(&Delta;CDE).<br>
+      Therefore, from (i) and (ii), AD/DB = AE/EC.
+    </div>
+  </div>
+
+  <div class="footer">Shapes might change size, but their essence remains!</div>
+</div>
+</body>
+</html>

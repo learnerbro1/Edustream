@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Real Numbers | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Real Numbers</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 1</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>Fundamental Theorem of Arithmetic (HCF & LCM Relation):</b>
+    <p>For any two positive integers <i>a</i> and <i>b</i>:</p>
+    <p class="hl" style="text-align: center; font-size: 20px; font-weight: bold; margin: 10px 0;">HCF(a, b) &times; LCM(a, b) = a &times; b</p>
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><span class="hl">Fundamental Theorem of Arithmetic:</span> Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur.</li>
+    <li><b>Finding HCF and LCM by Prime Factorisation:</b>
+      <ul>
+        <li><b>HCF:</b> Product of the smallest power of each common prime factor in the numbers.</li>
+        <li><b>LCM:</b> Product of the greatest power of each prime factor involved in the numbers.</li>
+      </ul>
+    </li>
+    <li><span class="hl2">Proof of Irrationality:</span> Let <i>p</i> be a prime number. If <i>p</i> divides <i>a&sup2;</i>, then <i>p</i> divides <i>a</i>, where <i>a</i> is a positive integer. We use this theorem and the method of contradiction to prove that numbers like &radic;2, &radic;3, &radic;5 are irrational.</li>
+  </ul>
+  <p class="note"><b>Note:</b> The sum or difference of a rational and an irrational number is irrational, and the product or quotient of a non-zero rational and an irrational number is irrational.</p>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> The HCF of 96 and 404 is 4. Find the LCM of 96 and 404. <span class="tag">CBSE 2019</span> <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> We know that HCF &times; LCM = Product of two numbers.<br>
+      4 &times; LCM = 96 &times; 404<br>
+      LCM = (96 &times; 404) / 4 = 96 &times; 101 = 9696.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> Prove that 3 + 2&radic;5 is irrational, given that &radic;5 is irrational. <span class="tag">IMPORTANT</span> <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let us assume, to the contrary, that 3 + 2&radic;5 is rational.<br>
+      Then we can find coprime integers a and b (b &ne; 0) such that 3 + 2&radic;5 = a/b.<br>
+      &rArr; 2&radic;5 = (a/b) - 3 = (a - 3b)/b<br>
+      &rArr; &radic;5 = (a - 3b)/2b.<br>
+      Since a and b are integers, (a - 3b)/2b is rational, and so &radic;5 is rational.<br>
+      But this contradicts the fact that &radic;5 is irrational.<br>
+      This contradiction has arisen because of our incorrect assumption. So, 3 + 2&radic;5 is irrational.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Given that HCF (306, 657) = 9, find LCM (306, 657). <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> LCM &times; HCF = Product of the two numbers<br>
+      LCM &times; 9 = 306 &times; 657<br>
+      LCM = (306 &times; 657) / 9 = 34 &times; 657 = 22338.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> Prove that &radic;2 is an irrational number. <span class="tag">IMPORTANT</span> <span class="tag">CBSE 2020</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let us assume, to the contrary, that &radic;2 is rational.<br>
+      Then, &radic;2 = a/b, where a and b are coprime integers and b &ne; 0.<br>
+      Squaring both sides, 2 = a&sup2; / b&sup2; &rArr; 2b&sup2; = a&sup2; ... (Equation 1)<br>
+      This means that 2 divides a&sup2;. Therefore, 2 divides a.<br>
+      Let a = 2c for some integer c.<br>
+      Substituting a = 2c in Equation 1:<br>
+      2b&sup2; = (2c)&sup2; &rArr; 2b&sup2; = 4c&sup2; &rArr; b&sup2; = 2c&sup2;<br>
+      This means that 2 divides b&sup2;. Therefore, 2 divides b.<br>
+      Since 2 divides both a and b, a and b have at least 2 as a common factor.<br>
+      This contradicts the fact that a and b are coprime. The contradiction arises due to our incorrect assumption.<br>
+      Hence, &radic;2 is irrational.
+    </div>
+  </div>
+
+  <div class="footer">Keep Practicing, Keep Excelling!</div>
+</div>
+</body>
+</html>

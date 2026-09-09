@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Coordinate Geometry | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Coordinate Geometry</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 7</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>Distance Formula:</b> The distance between two points P(x&#8321;, y&#8321;) and Q(x&#8322;, y&#8322;) is:<br>
+    <span class="hl" style="font-size: 18px; font-weight: bold;">d = &radic;[ (x&#8322; - x&#8321;)&sup2; + (y&#8322; - y&#8321;)&sup2; ]</span><br><br>
+
+    <b>Section Formula:</b> The coordinates of point P(x,y) which divides the line segment joining A(x&#8321;, y&#8321;) and B(x&#8322;, y&#8322;) internally in the ratio m&#8321; : m&#8322; are:<br>
+    <span class="hl2" style="font-size: 18px; font-weight: bold;">x = (m&#8321;x&#8322; + m&#8322;x&#8321;) / (m&#8321; + m&#8322;)</span> , <span class="hl2" style="font-size: 18px; font-weight: bold;">y = (m&#8321;y&#8322; + m&#8322;y&#8321;) / (m&#8321; + m&#8322;)</span><br><br>
+
+    <b>Mid-point Formula:</b> <br>
+    <span class="hl" style="font-size: 18px; font-weight: bold;">x = (x&#8321; + x&#8322;) / 2</span> , <span class="hl" style="font-size: 18px; font-weight: bold;">y = (y&#8321; + y&#8322;) / 2</span>
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li>The distance of a point P(x, y) from the origin O(0,0) is given by <b>&radic;(x&sup2; + y&sup2;)</b>.</li>
+    <li><b>Collinear Points:</b> Three points A, B, C are collinear if the sum of the lengths of any two line segments among AB, BC, AC is equal to the length of the remaining line segment (e.g., AB + BC = AC).</li>
+    <li><b>To prove a figure is a:</b>
+      <ul>
+        <li><i>Square:</i> Show all 4 sides are equal AND diagonals are equal.</li>
+        <li><i>Rhombus:</i> Show all 4 sides are equal.</li>
+        <li><i>Rectangle:</i> Show opposite sides are equal AND diagonals are equal.</li>
+        <li><i>Parallelogram:</i> Show opposite sides are equal (or diagonals bisect each other using mid-point formula).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> Find the distance of the point (-3, 4) from the x-axis. <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> The distance of a point (x, y) from the x-axis is its y-coordinate's absolute value. So, distance = |4| = 4 units.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> Find the point on the x-axis which is equidistant from (2, -5) and (-2, 9). <span class="tag">IMPORTANT</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the point on the x-axis be P(x, 0). Let A(2, -5) and B(-2, 9).<br>
+      PA = PB &rArr; PA&sup2; = PB&sup2;<br>
+      (x - 2)&sup2; + (0 - (-5))&sup2; = (x - (-2))&sup2; + (0 - 9)&sup2;<br>
+      x&sup2; - 4x + 4 + 25 = x&sup2; + 4x + 4 + 81<br>
+      -4x + 29 = 4x + 85 &rArr; -8x = 56 &rArr; x = -7.<br>
+      The point is (-7, 0).
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> In what ratio does the point (-4, 6) divide the line segment joining the points A(-6, 10) and B(3, -8)? <span class="tag">CBSE 2018</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the ratio be k : 1.<br>
+      Using section formula for x-coordinate:<br>
+      -4 = (k(3) + 1(-6)) / (k + 1)<br>
+      -4(k + 1) = 3k - 6 &rArr; -4k - 4 = 3k - 6 &rArr; -7k = -2 &rArr; k = 2/7.<br>
+      The ratio is 2:7.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> If the points A(6, 1), B(8, 2), C(9, 4) and D(p, 3) are the vertices of a parallelogram, taken in order, find the value of p. <span class="tag">HOTS</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> The diagonals of a parallelogram bisect each other.<br>
+      So, the mid-point of diagonal AC is the same as the mid-point of diagonal BD.<br>
+      Mid-point of AC = [ (6+9)/2 , (1+4)/2 ] = [ 15/2 , 5/2 ]<br>
+      Mid-point of BD = [ (8+p)/2 , (2+3)/2 ] = [ (8+p)/2 , 5/2 ]<br>
+      Equating the x-coordinates:<br>
+      15/2 = (8+p)/2 &rArr; 15 = 8 + p &rArr; p = 7.
+    </div>
+  </div>
+
+  <div class="footer">Connect the dots!</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Quadratic Equations | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Quadratic Equations</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 4</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>Standard Form:</b> ax&sup2; + bx + c = 0 (where a &ne; 0)<br><br>
+    <b>Quadratic Formula:</b> The roots are given by:<br>
+    <span class="hl" style="font-size: 18px; font-weight: bold;">x = [ -b &plusmn; &radic;(b&sup2; - 4ac) ] / 2a</span><br><br>
+    <b>Discriminant (D):</b> D = b&sup2; - 4ac
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><b>Nature of Roots:</b> Depends on the Discriminant (D = b&sup2; - 4ac):
+      <ul>
+        <li><span class="hl2">D &gt; 0:</span> Two distinct real roots.</li>
+        <li><span class="hl">D = 0:</span> Two equal real roots.</li>
+        <li><span class="hl2">D &lt; 0:</span> No real roots.</li>
+      </ul>
+    </li>
+    <li><b>Solving by Factorisation:</b> Split the middle term 'bx' into two parts whose sum is 'b' and product is 'ac'. Then factorise.</li>
+    <li><b>Word Problems:</b> Framing quadratic equations from real-life situations (like speed-distance, age, areas). Always discard the root that doesn't make sense physically (like negative age or distance).</li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> Find the value of k for which the quadratic equation 2x&sup2; + kx + 3 = 0 has equal roots. <span class="tag">CBSE 2019</span> <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> For equal roots, Discriminant D = 0.<br>
+      b&sup2; - 4ac = 0 &rArr; k&sup2; - 4(2)(3) = 0 &rArr; k&sup2; - 24 = 0 &rArr; k&sup2; = 24 &rArr; k = &plusmn;2&radic;6.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q2.</span> Solve for x: x&sup2; - 3x - 10 = 0 by factorisation method. <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Split -3x into -5x and 2x.<br>
+      x&sup2; - 5x + 2x - 10 = 0 &rArr; x(x - 5) + 2(x - 5) = 0<br>
+      (x - 5)(x + 2) = 0. Therefore, x = 5 or x = -2.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q3.</span> Find the roots of the equation 2x&sup2; - 7x + 3 = 0 using the quadratic formula. <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Here a = 2, b = -7, c = 3.<br>
+      D = b&sup2; - 4ac = (-7)&sup2; - 4(2)(3) = 49 - 24 = 25.<br>
+      x = [-b &plusmn; &radic;D] / 2a = [7 &plusmn; &radic;25] / 4 = [7 &plusmn; 5] / 4.<br>
+      Roots are (7+5)/4 = 12/4 = 3 and (7-5)/4 = 2/4 = 1/2.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q4.</span> A train travels 360 km at a uniform speed. If the speed had been 5 km/h more, it would have taken 1 hour less for the same journey. Find the speed of the train. <span class="tag">IMPORTANT</span> <span class="tag">CBSE 2020</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the usual speed be x km/h.<br>
+      Time taken = 360 / x.<br>
+      If speed is (x + 5) km/h, time taken = 360 / (x + 5).<br>
+      According to the question: (360 / x) - (360 / (x + 5)) = 1<br>
+      &rArr; 360 [ (x + 5 - x) / x(x + 5) ] = 1<br>
+      &rArr; 360 &times; 5 = x&sup2; + 5x &rArr; x&sup2; + 5x - 1800 = 0.<br>
+      Factorising: x&sup2; + 45x - 40x - 1800 = 0 &rArr; x(x + 45) - 40(x + 45) = 0<br>
+      &rArr; (x - 40)(x + 45) = 0.<br>
+      Since speed cannot be negative, x = 40.<br>
+      The speed of the train is 40 km/h.
+    </div>
+  </div>
+
+  <div class="footer">Roots hold the tree, roots hold the equation!</div>
+</div>
+</body>
+</html>

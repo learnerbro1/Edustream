@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Polynomials | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="../subjects/maths.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Maths</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="../index.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Polynomials</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Maths &mdash; Chapter 2</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Chapter Formulas</h2>
+  <div class="box">
+    <b>Relationship between zeroes and coefficients of a Quadratic Polynomial:</b><br>
+    For a quadratic polynomial <i>p(x) = ax&sup2; + bx + c</i> with zeroes &alpha; and &beta;:<br>
+    <ul>
+      <li><span class="hl">Sum of zeroes (&alpha; + &beta;) = -b / a = -(Coefficient of x) / (Coefficient of x&sup2;)</span></li>
+      <li><span class="hl">Product of zeroes (&alpha;&beta;) = c / a = (Constant term) / (Coefficient of x&sup2;)</span></li>
+    </ul>
+    <br>
+    <b>Formation of a Quadratic Polynomial:</b><br>
+    If &alpha; and &beta; are the zeroes, the polynomial is given by:<br>
+    <span class="hl2">k [ x&sup2; - (&alpha; + &beta;)x + &alpha;&beta; ]</span> (where k is a non-zero constant)
+  </div>
+
+  <h2>2. Important Concepts</h2>
+  <ul>
+    <li><span class="hl">Geometrical Meaning of Zeroes:</span> The zeroes of a polynomial p(x) are precisely the x-coordinates of the points where the graph of y = p(x) intersects the x-axis. A polynomial of degree <i>n</i> can have at most <i>n</i> zeroes.</li>
+    <li><b>Types of Polynomials:</b>
+      <ul>
+        <li>Linear Polynomial: Degree 1 (e.g., ax + b). Maximum 1 zero.</li>
+        <li>Quadratic Polynomial: Degree 2 (e.g., ax&sup2; + bx + c). Maximum 2 zeroes. Its graph is a parabola.</li>
+        <li>Cubic Polynomial: Degree 3 (e.g., ax&sup3; + bx&sup2; + cx + d). Maximum 3 zeroes.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>3. PYQ with Solutions</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq">
+    <span class="q">Q1.</span> Find the number of zeroes of p(x) if its graph intersects the x-axis at exactly 3 points. <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> The number of zeroes is 3, because the zeroes are the x-coordinates of the points where the graph intersects the x-axis.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q2.</span> If one zero of the polynomial x&sup2; - 4x + 1 is 2 + &radic;3, write the other zero. <span class="marks">[1]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Sum of zeroes = -(-4)/1 = 4. Let the other zero be &beta;.<br>
+      (2 + &radic;3) + &beta; = 4 &rArr; &beta; = 4 - 2 - &radic;3 = 2 - &radic;3.
+    </div>
+  </div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq">
+    <span class="q">Q3.</span> Find the zeroes of the quadratic polynomial x&sup2; + 7x + 10, and verify the relationship between the zeroes and the coefficients. <span class="tag">IMPORTANT</span> <span class="marks">[3]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let p(x) = x&sup2; + 7x + 10<br>
+      = x&sup2; + 5x + 2x + 10 = x(x + 5) + 2(x + 5) = (x + 2)(x + 5).<br>
+      So, the zeroes are -2 and -5.<br>
+      <b>Verification:</b><br>
+      Sum of zeroes = -2 + (-5) = -7. Also, -b/a = -7/1 = -7.<br>
+      Product of zeroes = (-2) &times; (-5) = 10. Also, c/a = 10/1 = 10.<br>
+      Hence verified.
+    </div>
+  </div>
+
+  <div class="pyq">
+    <span class="q">Q4.</span> Find a quadratic polynomial, the sum and product of whose zeroes are -3 and 2, respectively. <span class="tag">CBSE 2019</span> <span class="marks">[2]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> Let the zeroes be &alpha; and &beta;.<br>
+      Given: &alpha; + &beta; = -3 and &alpha;&beta; = 2.<br>
+      The quadratic polynomial is given by k(x&sup2; - (&alpha;+&beta;)x + &alpha;&beta;).<br>
+      = k(x&sup2; - (-3)x + 2) = k(x&sup2; + 3x + 2).<br>
+      Taking k = 1, the required polynomial is x&sup2; + 3x + 2.
+    </div>
+  </div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq">
+    <span class="q">Q5.</span> If &alpha; and &beta; are the zeroes of the quadratic polynomial f(x) = x&sup2; - p(x + 1) - c, show that (&alpha; + 1)(&beta; + 1) = 1 - c. <span class="tag">HOTS</span> <span class="marks">[5]</span>
+    <div style="margin-top: 8px; color: var(--green);">
+      <b>Solution:</b> f(x) = x&sup2; - px - p - c = x&sup2; - px - (p + c).<br>
+      Here, a = 1, b = -p, constant term = -(p + c).<br>
+      Sum of zeroes: &alpha; + &beta; = -(-p)/1 = p.<br>
+      Product of zeroes: &alpha;&beta; = -(p + c)/1 = -p - c.<br>
+      LHS = (&alpha; + 1)(&beta; + 1) = &alpha;&beta; + &alpha; + &beta; + 1<br>
+      Substitute the values:<br>
+      = (-p - c) + (p) + 1 = -p - c + p + 1 = 1 - c = RHS.<br>
+      Hence proved.
+    </div>
+  </div>
+
+  <div class="footer">Maths is all about practice!</div>
+</div>
+</body>
+</html>
