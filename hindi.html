@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hindi Chapters - Class 10</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f0f4f8; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 2rem; }
+        .header-container { width: 100%; max-width: 800px; display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2rem; }
+        .back-button { text-decoration: none; color: #9b59b6; font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem; transition: color 0.3s; display: inline-block; }
+        .back-button:hover { color: #8e44ad; text-decoration: underline; }
+        h1 { color: #2c3e50; font-size: 2.2rem; width: 100%; text-align: center; margin-bottom: 1rem; }
+        .section-title { width: 100%; max-width: 800px; color: #9b59b6; font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #9b59b6; padding-bottom: 0.5rem; }
+        .chapter-grid { width: 100%; max-width: 800px; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.25rem; }
+        .chapter-tile { background-color: #ffffff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); text-decoration: none; color: #34495e; font-size: 1.1rem; font-weight: 600; border-top: 5px solid #9b59b6; transition: all 0.3s ease; display: flex; align-items: center; }
+        .chapter-tile:hover { transform: translateY(-4px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); background-color: #f9effbf5; color: #2c3e50; }
+        .chapter-number { background-color: #9b59b6; color: white; min-width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 1rem; font-weight: bold; }
+        @media (max-width: 600px) { h1 { font-size: 1.8rem; } .chapter-tile { font-size: 1rem; padding: 1.2rem; } .chapter-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="header-container">
+        <a href="front-page.html" class="back-button">← Back to Subjects</a>
+        <h1>Hindi - Class 10</h1>
+    </div>
+
+    <div class="section-title">Kshitij (Kavya Khand)</div>
+    <div class="chapter-grid">
+        <a href="#" class="chapter-tile"><div class="chapter-number">1</div> Surdas ke Pad</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">2</div> Tulsidas (Ram-Lakshman-Parshuram Samvad)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">3</div> Jayashankar Prasad (Atmakathya)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">4</div> Suryakant Tripathi Nirala (Utsah, Aat Nahi Rahi Hai)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">5</div> Nagarjun (Yah Danturit Muskan, Fasal)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">6</div> Mangalesh Dabral (Sangatkar)</a>
+    </div>
+
+    <div class="section-title">Kshitij (Gadya Khand)</div>
+    <div class="chapter-grid">
+        <a href="#" class="chapter-tile"><div class="chapter-number">7</div> Swayam Prakash (Netaji Ka Chashma)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">8</div> Ramvriksh Benipuri (Balgobin Bhagat)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">9</div> Yashpal (Lakhnavi Andaz)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">10</div> Mannu Bhandari (Ek Kahani Yah Bhi)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">11</div> Yatindra Mishra (Naubatkhane Me Ibadat)</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">12</div> Bhadant Anand Kausalyayan (Sanskriti)</a>
+    </div>
+
+    <div class="section-title">Kritika</div>
+    <div class="chapter-grid">
+        <a href="#" class="chapter-tile"><div class="chapter-number">1</div> Mata Ka Aanchal</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">2</div> Sana Sana Hath Jodhi</a>
+        <a href="#" class="chapter-tile"><div class="chapter-number">3</div> Main Kyon Likhta Hun?</a>
+    </div>
+</body>
+</html>

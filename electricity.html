@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Electricity | Revision Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <div style="margin-bottom: 20px;">
+    <a href="science.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">&larr; Back to Science</a>
+    <span style="color:var(--ink); margin: 0 10px;">|</span>
+    <a href="front-page.html" style="text-decoration:none; color:var(--red); font-weight:700; font-size:18px;">Back to Home</a>
+  </div>
+
+  <h1 class="title">Electricity</h1>
+  <p class="subtitle">CBSE Class 10 &bull; <b>Physics &mdash; Chapter 11</b> &bull; Quick Revision Sheet + PYQs</p>
+
+  <h2>1. Basic Concepts</h2>
+  <ul>
+    <li><b>Electric Current (I):</b> Rate of flow of electric charge. Formula: <span class="hl">I = Q / t</span>. Unit: Ampere (A). Measured by Ammeter (connected in series).</li>
+    <li><b>Potential Difference (V):</b> Work done to move a unit charge from one point to another. Formula: <span class="hl">V = W / Q</span>. Unit: Volt (V). Measured by Voltmeter (connected in parallel).</li>
+  </ul>
+
+  <h2>2. Ohm's Law</h2>
+  <p>The current flowing through a conductor is directly proportional to the potential difference across its ends, provided temperature remains constant.</p>
+
+  <img src="https://placehold.co/500x300/fbf6e9/1f3a5f?text=Diagram:+V-I+Graph+for+Ohm%27s+Law" alt="Ohm's Law Graph" class="diagram-img">
+  <div class="diagram-caption">Fig 11.1: V-I Graph verifying Ohm's Law (Slope gives Resistance)</div>
+
+  <div class="box formula">
+    <div class="f">V = I &times; R</div>
+    <div>(R = Resistance. Unit of R is Ohm (&Omega;))</div>
+  </div>
+
+  <h2>3. Resistance and Resistivity</h2>
+  <p><b>Factors affecting resistance:</b> Directly proportional to length (L), inversely proportional to area of cross-section (A), depends on material and temperature.</p>
+  <div class="box formula">
+    <div class="f">R = &rho; (L / A)</div>
+  </div>
+  <p>Where &rho; (Rho) is Resistivity. Unit: Ohm-meter (&Omega;m). Resistivity is a property of the material and does not change with length or thickness.</p>
+
+  <h2>4. Resistors in Series and Parallel</h2>
+  <div class="two-col">
+    <div class="box">
+      <b>In Series:</b> Current is same across all resistors. Total potential difference is the sum.<br>
+      <span class="f" style="color:var(--red); font-weight:bold;">R_eq = R₁ + R₂ + R₃</span>
+    </div>
+    <div class="box">
+      <b>In Parallel:</b> Potential difference is same across all. Total current splits.<br>
+      <span class="f" style="color:var(--red); font-weight:bold;">1/R_eq = 1/R₁ + 1/R₂ + 1/R₃</span>
+    </div>
+  </div>
+
+  <img src="https://placehold.co/500x200/fbf6e9/1f3a5f?text=Diagram:+Series+and+Parallel+Circuits" alt="Series and Parallel" class="diagram-img">
+  <div class="diagram-caption">Fig 11.2: Arrangement of resistors in Series vs Parallel</div>
+
+  <p class="note">Parallel circuits are used in homes because if one appliance fails, others continue working, and each gets the full voltage.</p>
+
+  <h2>5. Heating Effect of Electric Current (Joule's Law)</h2>
+  <p>The heat produced in a resistor is directly proportional to the square of current (I²), resistance (R), and time (t).</p>
+  <div class="box formula">
+    <div class="f">H = I²Rt</div>
+  </div>
+  <p><i>Applications:</i> Electric iron, toaster, heater, electric fuse, bulb filament (Tungsten).</p>
+
+  <h2>6. Electric Power</h2>
+  <p>Rate at which electrical energy is consumed.</p>
+  <div class="box formula">
+    <div class="f">P = VI = I²R = V²/R</div>
+  </div>
+  <p>Unit: Watt (W). Commercial unit of electrical energy is Kilowatt-hour (kWh). <br> <span class="hl2">1 kWh = 3.6 &times; 10⁶ Joules (1 Unit of electricity)</span>.</p>
+
+  <h2>PYQ Practice</h2>
+
+  <h3>Very short / MCQ &mdash; 1 mark</h3>
+  <div class="pyq"><span class="q">Q1.</span> What is the SI unit of electrical resistivity? <span class="marks">[1]</span></div>
+  <div class="pyq"><span class="q">Q2.</span> Which instrument is used to measure potential difference? <span class="marks">[1]</span></div>
+  <div class="pyq"><span class="q">Q3.</span> Define 1 Watt of power. <span class="marks">[1]</span></div>
+  <div class="pyq"><span class="q">Q4.</span> Name a metal used for the filament of an electric bulb. <span class="marks">[1]</span></div>
+
+  <h3>Short answer &mdash; 2/3 marks</h3>
+  <div class="pyq"><span class="q">Q5.</span> Why are alloys like nichrome used in electrical heating devices? <span class="marks">[2]</span></div>
+  <div class="pyq"><span class="q">Q6.</span> A wire of length L and resistance R is stretched so its length becomes 2L. What is its new resistance? <span class="tag">CBSE HOTS</span> <span class="marks">[3]</span></div>
+  <div class="pyq"><span class="q">Q7.</span> State Ohm's law. Draw a circuit diagram to verify it. <span class="marks">[3]</span></div>
+  <div class="pyq"><span class="q">Q8.</span> List two disadvantages of connecting electrical appliances in series. <span class="marks">[2]</span></div>
+
+  <h3>Long answer / HOTS &mdash; 5 marks</h3>
+  <div class="pyq"><span class="q">Q9.</span> Two lamps, one rated 100 W at 220 V, and the other 60 W at 220 V, are connected in parallel to electric mains supply. What current is drawn from the line if the supply voltage is 220 V? <span class="tag">CBSE 2017</span> <span class="marks">[5]</span></div>
+  <div class="pyq"><span class="q">Q10.</span> (a) Derive the expression for equivalent resistance of three resistors connected in parallel. (b) Calculate the total cost of running a 500W refrigerator for 30 days at 10 hours/day at Rs 5 per kWh. <span class="tag">CBSE 2019</span> <span class="marks">[5]</span></div>
+
+  <div class="footer">Power through your studies!</div>
+</div>
+</body>
+</html>

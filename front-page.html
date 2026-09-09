@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Front Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            /* A soft background color to make the white tiles pop out */
+            background-color: #f0f4f8;
+
+            /* Center everything on the screen */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 4rem 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            font-size: 2.5rem;
+        }
+
+        .tile-list {
+            /* "List form in the center" - strict single column or narrow responsive grid */
+            width: 100%;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .tile {
+            /* Tile styling */
+            background-color: #ffffff;
+            padding: 1.5rem 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #34495e;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border-left: 8px solid #3498db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1px;
+            user-select: none;
+        }
+
+        /* Hover effect to make it feel interactive */
+        .tile:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            background-color: #f8faff;
+        }
+
+        /* Individual subject colors for a nice visual touch */
+        .tile.maths { border-left-color: #e74c3c; }        /* Red */
+        .tile.science { border-left-color: #2ecc71; }      /* Green */
+        .tile.english { border-left-color: #f1c40f; }      /* Yellow */
+        .tile.hindi { border-left-color: #9b59b6; }        /* Purple */
+        .tile.it { border-left-color: #3498db; }           /* Blue */
+        .tile.social-studies { border-left-color: #e67e22; } /* Orange */
+
+        /* Responsive styling for smaller mobile screens */
+        @media (max-width: 600px) {
+            .tile {
+                font-size: 1.2rem;
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Select a Subject</h1>
+
+    <div class="tile-list">
+        <a href="maths.html" class="tile maths">MATHS</a>
+        <!-- Now links to the new science.html page -->
+        <a href="science.html" class="tile science">SCIENCE</a>
+        <a href="english.html" class="tile english">ENGLISH</a>
+        <a href="hindi.html" class="tile hindi">HINDI</a>
+        <a href="it.html" class="tile it">IT</a>
+        <a href="social-studies.html" class="tile social-studies">SOCIAL STUDIES</a>
+    </div>
+
+</body>
+</html>
